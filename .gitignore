@@ -1,0 +1,14 @@
+pb/pb_data
+pb/pb_migrations
+pb/pocketbase.exe
+pb/LICENSE.md
+pb/CHANGELOG.md
+pb/pb_public/
+parafia-gronkow/node_modules/
+parafia-gronkow/dist/
+parafia-gronkow/package-lock.json
+parafia-gronkow/package.json
+parafia-gronkow/vite.config.js
+parafia-gronkow/eslint.config.js
+parafia-gronkow/public/
+parafia-gronkow/src/lib

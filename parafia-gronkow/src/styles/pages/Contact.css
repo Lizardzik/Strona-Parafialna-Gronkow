@@ -1,0 +1,235 @@
+.contact-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-page h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: var(--accent-navy);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--bg-beige);
+  margin-bottom: 3rem;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.info-block {
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bank-account {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--accent-navy);
+  background-color: var(--bg-beige);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.bank-code {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent-navy);
+  background-color: var(--bg-beige);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+.contact-divider {
+  border: 0;
+  height: 2px;
+  background-color: var(--bg-beige);
+  margin: 2.5rem 0;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-wrapper h3 {
+  color: var(--accent-navy);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.textarea-wrapper {
+  position: relative;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(194, 163, 99, 0.1);
+}
+
+.char-counter {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 0.3rem;
+}
+
+.char-counter.limit {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.submit-btn {
+  background-color: var(--accent-navy);
+  color: white;
+  border: none;
+  padding: 1.1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #11223b;
+}
+
+.submit-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--bg-beige);
+}
+
+.staff-section {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.staff-section h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-navy);
+}
+
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.staff-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.card-priest {
+  border-bottom: 4px solid var(--accent-gold);
+}
+
+.card-worker {
+  border-bottom: 4px solid var(--accent-navy);
+  justify-content: center;
+}
+
+.staff-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-gold);
+}
+
+.staff-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.staff-role {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.staff-name {
+  font-size: 1.2rem;
+  color: var(--accent-navy);
+  font-weight: 600;
+}
+
+/* Dostosowanie dla małych ekranów */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  .bank-account {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

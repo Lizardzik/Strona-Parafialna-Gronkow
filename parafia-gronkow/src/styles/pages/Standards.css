@@ -1,0 +1,71 @@
+.standards-page {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.standards-container {
+  background: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.standards-container h1 {
+  font-family: var(--font-display);
+  color: var(--accent-navy);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.standards-container h2 {
+  font-size: 1.2rem;
+  color: var(--accent-gold);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.standards-container h3 {
+  color: var(--accent-navy);
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--bg-beige);
+  padding-bottom: 0.5rem;
+}
+
+.standards-container ul {
+  padding-left: 1.5rem;
+}
+
+.standards-container li {
+  margin-bottom: 0.5rem;
+}
+
+.full-document-box {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--bg-beige);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 4px;
+}
+
+.download-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto 0;
+  padding: 1rem;
+  background-color: var(--accent-navy);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+  background-color: var(--accent-gold);
+}

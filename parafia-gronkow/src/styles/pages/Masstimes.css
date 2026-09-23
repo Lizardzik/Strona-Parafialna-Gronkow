@@ -1,0 +1,206 @@
+.mass-times-page {
+  max-width: 750px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+  animation: fadeUp 0.6s ease-out;
+  box-sizing: border-box;
+}
+
+.mass-times-page h2 {
+  text-align: center;
+  margin-bottom: 2.9rem;
+  font-size: 2.2rem;
+  font-family: var(--font-heading);
+  color: var(--accent-navy);
+  font-weight: 700;
+}
+
+.mass-card {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 10px 30px rgba(194, 163, 99, 0.12);
+  transform: translateY(-5px);
+  box-sizing: border-box;
+}
+
+.season-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--bg-beige);
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.season-tab {
+  background: none;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--text-main);
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.season-tab:hover {
+  opacity: 0.8;
+  color: var(--accent-navy);
+}
+
+.season-tab.active {
+  opacity: 1;
+  color: var(--accent-navy);
+}
+
+.season-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-gold);
+  border-radius: 3px 3px 0 0;
+}
+
+.active-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-gold);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(194, 163, 99, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mass-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mass-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid var(--bg-beige);
+  font-size: 1.05rem;
+  color: var(--text-main);
+  transition: background-color 0.2s ease;
+  gap: 1rem;
+}
+
+.mass-list li:last-child {
+  border-bottom: none;
+}
+
+.mass-list li.today {
+  background-color: var(--bg-beige);
+  border-left: 4px solid var(--accent-gold);
+  padding-left: 1.2rem;
+  margin-left: -0.5rem;
+  border-radius: 0 6px 6px 0;
+}
+
+.mass-list li.today span {
+  font-weight: 600;
+  color: var(--accent-navy);
+}
+
+.mass-list li.today strong {
+  font-weight: 800;
+}
+
+.mass-list strong {
+  color: var(--accent-navy);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.mass-list .sunday {
+  color: #a82e2e;
+  font-weight: 600;
+}
+
+.mass-list .sunday strong {
+  color: #a82e2e;
+}
+
+.mass-list .special {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.mass-list .special strong {
+  color: #64748b;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 650px) {
+  .mass-times-page {
+    padding: 0 1rem;
+  }
+
+  .mass-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .season-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .season-tab.active::after {
+    display: none;
+  }
+
+  .season-tab.active {
+    background-color: rgba(194, 163, 99, 0.1);
+    border-radius: 6px;
+  }
+
+  .mass-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1.2rem 0.5rem;
+  }
+
+  .mass-list li.today {
+    align-items: flex-start;
+  }
+
+  .mass-list strong {
+    text-align: left;
+    align-self: flex-start;
+  }
+}

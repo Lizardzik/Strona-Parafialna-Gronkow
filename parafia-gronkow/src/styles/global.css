@@ -1,0 +1,52 @@
+:root {
+  --bg-light: #fdfdfc;
+  --bg-beige: #f5f2eb;
+  --text-main: #2d2d2d;
+  --accent-navy: #1b365d;
+  --accent-gold: #c2a363;
+
+  --font-heading: "Lora", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfbf6;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  transition: background-color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--accent-navy);
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-navy);
+}
+
+.main-content.font-size-normal {
+  font-size: 1rem;
+}
+
+.main-content.font-size-large p,
+.main-content.font-size-large li,
+.main-content.font-size-large span:not(.badge),
+.main-content.font-size-large table {
+  font-size: 1.15rem;
+}
+
+.main-content.font-size-xlarge p,
+.main-content.font-size-xlarge li,
+.main-content.font-size-xlarge span:not(.badge),
+.main-content.font-size-xlarge table {
+  font-size: 1.3rem;
+}

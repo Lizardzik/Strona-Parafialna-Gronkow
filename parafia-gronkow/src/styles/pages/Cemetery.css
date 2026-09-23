@@ -1,0 +1,135 @@
+.cemetery-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  animation: fadeUp 0.5s ease-out;
+}
+
+.cemetery-content {
+  margin-top: 2rem;
+}
+
+.cemetery-info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 8px 30px rgba(27, 54, 93, 0.08);
+  border: 1px solid var(--bg-beige);
+  position: relative;
+  overflow: hidden;
+}
+
+.cemetery-info-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-gold);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--accent-navy);
+  font-family: var(--font-heading);
+}
+
+.badge {
+  background-color: var(--bg-beige);
+  color: var(--accent-navy);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #eadecc;
+}
+
+.intro-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-main);
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--bg-beige);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feature-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-navy);
+  font-size: 1.15rem;
+  font-family: var(--font-heading);
+}
+
+.feature-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.action-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cemetery-main-btn {
+  background-color: var(--accent-navy);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cemetery-main-btn:hover {
+  background-color: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(194, 163, 99, 0.3);
+}
+
+.action-note {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .cemetery-info-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .card-header h2 {
+    font-size: 1.6rem;
+  }
+}
